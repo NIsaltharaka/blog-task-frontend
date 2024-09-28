@@ -21,7 +21,7 @@ const BlogDetail = () => {
       <AppBar position="static" sx={{ bgcolor: 'black' }}>
         <Toolbar>
           <Typography variant="h6" component="Box" sx={{ flexGrow: 1 }}>
-          {blog.title}
+            {blog.title}
           </Typography>
           <Button color="inherit" onClick={handleClose}>Back</Button>
         </Toolbar>
@@ -40,13 +40,19 @@ const BlogDetail = () => {
           bgcolor: 'background.paper',
           marginTop: '30px',
           position: 'relative'
-      }}
+        }}
       >
-        <img 
-          src={`http://127.0.0.1:8000/storage/${blog.image}`} 
-          alt={blog.title} 
-          style={{ maxWidth: '50%', maxHeight: '50vh', objectFit: 'cover', marginBottom: '20px' }} 
-        />
+        <Box
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+        >
+          <img
+            src={`http://127.0.0.1:8000/storage/${blog.image}`}
+            alt={blog.title}
+            style={{ maxWidth: '50%', maxHeight: '50vh', objectFit: 'cover', marginBottom: '20px' }}
+          />
+        </Box>
         <Typography variant="h6" component="Box" color="text.secondary" gutterBottom>
           by {blog.author}
         </Typography>

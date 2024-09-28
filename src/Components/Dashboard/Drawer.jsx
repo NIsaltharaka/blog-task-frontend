@@ -150,7 +150,7 @@ const ResponsiveDrawer = (props) => {
           <Typography variant="h6" noWrap component="div">
             Blog Task
           </Typography>
-          <Box sx={{ flexGrow: 1 }} /> 
+          <Box sx={{ flexGrow: 1 }} />
           <IconButton
             color="inherit"
             aria-label="logout"
@@ -207,10 +207,10 @@ const ResponsiveDrawer = (props) => {
         sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
       >
         <Toolbar />
-        {children} 
+        {children}
       </Box>
 
-     
+
       <Dialog
         open={openDialog}
         onClose={handleLogoutDialogClose}
@@ -237,8 +237,8 @@ const ResponsiveDrawer = (props) => {
           left: 0,
           width: '100%',
           height: '100%',
-          backgroundColor: 'rgba(255, 255, 255, 0.7)', 
-          zIndex: 1300 
+          backgroundColor: 'rgba(255, 255, 255, 0.7)',
+          zIndex: 1300
         }}
       >
         <CircularProgress />
